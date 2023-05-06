@@ -1,3 +1,97 @@
-<pre>
-<!DOCTYPE html><html><head><title>PageTitle</title><style>*{box-sizing:border-box;margin:0;padding:0}body{h:100vh}.container{d:flex;flex-direction:column;justify-content:center;align-items:justify}.container h1,.container h2,.container h3{font-size:5vw;text-align:center}.container h2{font-size:3vw}.container h3{font-size:2vw}</style></head><body><div class="container"><h1>🦁DNA🐍 Teclado⚡Membrana</h1><h2>👨‍🚒🤝ALEX📲https://wa.me/1234567890⏱️</h2><h3>🚨Calota 🏷️Etiqueta 👨🏼‍🏭Custom 🏅10 Anos🏭🛩️🏥🚚</h3></div></body></html>
-</pre>
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>🦁DNA🐍</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      html,
+      body {
+        height: 100%;
+        width: 100%;
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container_horizontal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container_vertical {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .container_vertical h1 {
+        font-size: 5.4rem;
+      }
+
+      .container_vertical h2 {
+        font-size: 3.5rem;
+      }
+
+      .container_vertical h3 {
+        font-size: 2.5rem;
+      }
+
+      .container_vertical h4 {
+        font-size: 2rem;
+      }
+
+      .container_horizontal h1 {
+        font-size: 8rem;
+      }
+
+      .container_horizontal h2 {
+        font-size: 4rem;
+      }
+
+      .container_horizontal h3 {
+        font-size: 3rem;
+      }
+
+      .container_horizontal h4 {
+        font-size: 2rem;
+      }
+
+      @media (orientation: portrait) {
+        .container_horizontal {
+          display: none;
+        }
+        .container_vertical {
+          display: flex;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container_horizontal">
+      <h1>🦁DNA🐍</h1><br>
+      <h2>Teclados de Membrana</h2><br>
+      <h4>👨‍🚒🤝ALEX📲https://wa.me/1234567890⏱️</h4><br>
+        <h2>🏭🛩️⚡🏥🚚</h2><br>
+        <h4>🚨Calotas🏷️Etiquetas👨🏼‍🏭Custom🏅10 Anos</h4><br>
+    </div>
+    <div class="container_vertical">
+      <h1>🦁DNA🐍</h1><br>
+      <h3>Teclados de Membrana</h3><br>
+      <h2>👨‍🚀🤝Alex📲👇</h2><br>
+      <h4>📲https://wa.me/1234567890</h4><br>
+      <h2>🏭🛩️⚡🏥🚚</h2><br>
+    </div>
+  </body>
+</html>
