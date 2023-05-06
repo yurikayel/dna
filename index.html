@@ -15,12 +15,30 @@
         height: 100%;
         width: 100%;
       }
-
-      body {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+      
+body {
+    /* Adding pastel colors to the gradient to make it more low-key */
+    background: linear-gradient(to bottom right, 
+    rgba(238, 154, 173, 0.7), rgba(210, 180, 222, 0.7), rgba(135, 206, 235, 0.7), rgba(241, 240, 229, 0.7), rgba(162, 222, 208, 0.7), rgba(255, 237, 200, 0.7), rgba(250, 182, 157, 0.7));
+    background-size: 400% 400%;
+    animation: gradient 30s linear infinite;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+/*Using the colors #F44336, #FF9800, #FFEB3B, and #4CAF50 to represent energy, speed, and assertiveness */
+      
+      @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 100% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
       }
 
       .container_horizontal {
